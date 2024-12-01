@@ -12,6 +12,5 @@ cask "spotify"
 cask "visual-studio-code"
 cask "warp"
 
-mas "GarageBand", id: 682658836
 mas "Kindle", id: 302584613
 mas "LINE", id: 539883307
