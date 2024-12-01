@@ -1,0 +1,18 @@
+[user]
+	name = shota-tech
+	email = 57557385+shota-tech@users.noreply.github.com
+
+[ghq]
+	root = ~/src
+
+[alias]
+	br = branch
+	st = status
+	sw = switch
+	cm = commit -m
+	pll = pull
+	psh = push -u origin HEAD
+	stl = stash list
+	sts = stash save -u -m
+	stp = stash pop
+	rss = reset --soft HEAD^
