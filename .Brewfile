@@ -2,7 +2,7 @@ tap "homebrew/bundle"
 
 brew "ghq"
 brew "mas"
-
+brew "peco"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "karabiner-elements"
