@@ -4,6 +4,7 @@ brew "ghq"
 brew "mas"
 brew "peco"
 
+cask "arc"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "karabiner-elements"
