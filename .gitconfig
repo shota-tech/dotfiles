@@ -8,6 +8,7 @@
 [alias]
 	br = branch
 	st = status
+	ad = add .
 	sw = switch
 	cm = commit -m
 	lg = log --oneline
