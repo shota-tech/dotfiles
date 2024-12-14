@@ -10,6 +10,7 @@
 	st = status
 	sw = switch
 	cm = commit -m
+	lg = log --oneline
 	pll = pull
 	psh = push -u origin HEAD
 	stl = stash list
