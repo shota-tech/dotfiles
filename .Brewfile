@@ -1,8 +1,13 @@
 tap "homebrew/bundle"
 
+brew "bat"
+brew "eza"
+brew "fd"
 brew "ghq"
+brew "git-delta"
 brew "mas"
 brew "peco"
+brew "ripgrep"
 
 cask "arc"
 cask "cursor"
