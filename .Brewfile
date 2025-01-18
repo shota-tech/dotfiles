@@ -7,6 +7,7 @@ brew "gh"
 brew "ghq"
 brew "git-delta"
 brew "mas"
+brew "mise"
 brew "peco"
 brew "ripgrep"
 
