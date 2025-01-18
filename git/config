@@ -10,6 +10,7 @@
 	st = status
 	ad = add .
 	sw = switch
+	swp = !git switch $(git branch | peco | tr -d ' *')
 	cm = commit -m
 	lg = log --oneline
 	pll = pull
