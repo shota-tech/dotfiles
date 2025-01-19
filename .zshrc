@@ -1,6 +1,7 @@
 export PROMPT='%F{green}%1~%f %# '
 
 alias g='git'
+alias cl='clear'
 alias cur='cursor'
 alias repo='cd $(ghq root)/$(ghq list | peco)'
 
