@@ -2,6 +2,9 @@
 	name = shota-tech
 	email = 57557385+shota-tech@users.noreply.github.com
 
+[core]
+	pager = delta
+
 [ghq]
 	root = ~/src
 
