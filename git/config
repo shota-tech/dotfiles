@@ -20,8 +20,8 @@
 	swf = !git switch $(git branch | fzf | tr -d ' *')
 	cm = commit -m
 	lg = log --oneline
-	pll = pull
-	psh = push -u origin HEAD
+	pl = pull
+	ps = push -u origin HEAD
 	stl = stash list
 	sts = stash save -u -m
 	stp = stash pop
