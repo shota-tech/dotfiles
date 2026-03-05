@@ -1,5 +1,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
+bindkey '^Z' undo
+
 alias g='git'
 alias lg='lazygit'
 alias nv='nvim'
