@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit
+
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=1000000
@@ -8,6 +11,8 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt hist_reduce_blanks
 setopt hist_no_store
+setopt auto_list
+setopt auto_menu
 
 bindkey '^Z' undo
 
