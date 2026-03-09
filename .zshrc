@@ -17,6 +17,7 @@ setopt auto_menu
 bindkey '^Z' undo
 
 export XDG_CONFIG_HOME="$HOME/.config"
+export EDITOR="nvim"
 
 alias g='git'
 alias lg='lazygit'
