@@ -25,10 +25,14 @@ alias nv='nvim'
 alias repo='cd $(ghq root)/$(ghq list | fzf --reverse)'
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(sheldon source)"
 
 source <(fzf --zsh)
 source "$XDG_CONFIG_HOME/fzf/catppuccin-fzf-mocha.sh"
+
+if [[ -f $HOME/.zshrc.local ]]; then
+  source $HOME/.zshrc.local
+fi
+
