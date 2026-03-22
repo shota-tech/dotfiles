@@ -3,7 +3,24 @@ theme = Catppuccin Mocha
 background-opacity = 0.8
 background-blur = true 
 
-window-padding-x = 12
-window-padding-y = 12
+window-padding-x = 8
+window-padding-y = 8
 window-padding-balance = true
+
+desktop-notifications = true
+
+macos-option-as-alt = left
+
+keybind = alt+super+h=previous_tab
+keybind = alt+super+l=next_tab
+keybind = alt+super+arrow_left=previous_tab
+keybind = alt+super+arrow_right=next_tab
+keybind = alt+h=goto_split:left
+keybind = alt+j=goto_split:bottom
+keybind = alt+k=goto_split:top
+keybind = alt+l=goto_split:right
+keybind = alt+arrow_left=goto_split:left
+keybind = alt+arrow_down=goto_split:bottom
+keybind = alt+arrow_up=goto_split:top
+keybind = alt+arrow_right=goto_split:right
 
