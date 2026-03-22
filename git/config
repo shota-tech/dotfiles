@@ -11,22 +11,6 @@
 [ghq]
   root = ~/src
 
-[alias]
-  br = branch
-  st = status
-  ad = add .
-  sw = switch
-  swc = switch -c
-  swf = !git switch $(git branch | fzf | tr -d ' *')
-  cm = commit -m
-  lg = log --oneline
-  pl = pull
-  ps = push -u origin HEAD
-  stl = stash list
-  sts = stash save -u -m
-  stp = stash pop
-  rss = reset --soft HEAD^
-
 [include]
   path = ~/.config/delta/catppuccin.gitconfig
 
