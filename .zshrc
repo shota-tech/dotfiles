@@ -29,6 +29,20 @@ eval "$(sheldon source)"
 source <(fzf --zsh)
 source "$XDG_CONFIG_HOME/fzf/catppuccin-fzf-mocha.sh"
 
+function repo() {
+  local repo=$(ghq list | fzf --height 45% --reverse)
+  if [[ -n "$repo" ]]; then
+    cd "$(ghq root)/$repo"
+  fi
+}
+
+function git-switch-fzf() {
+  local branch=$(git branch | cut -c 3- | fzf --height 45% --reverse)
+  if [[ -n "$branch" ]]; then
+    git switch $branch
+  fi
+}
+
 if [[ -f $HOME/.zshrc.local ]]; then
   source $HOME/.zshrc.local
 fi
