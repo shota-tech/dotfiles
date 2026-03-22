@@ -27,4 +27,4 @@ abbr gwtr="git worktree remove"
 abbr gwtp="git worktree prune"
 
 abbr nv="nvim"
-abbr lg="lazygit"
+abbr gg="lazygit"
