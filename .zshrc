@@ -14,15 +14,12 @@ setopt hist_no_store
 setopt auto_list
 setopt auto_menu
 
+bindkey -e
 bindkey '^Z' undo
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
-
-alias g='git'
-alias lg='lazygit'
-alias nv='nvim'
-alias repo='cd $(ghq root)/$(ghq list | fzf --reverse)'
+export ABBR_SET_EXPANSION_CURSOR=1
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
@@ -35,4 +32,3 @@ source "$XDG_CONFIG_HOME/fzf/catppuccin-fzf-mocha.sh"
 if [[ -f $HOME/.zshrc.local ]]; then
   source $HOME/.zshrc.local
 fi
-
