@@ -1,0 +1,83 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(~/src/**)",
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(find *)",
+      "Bash(fd *)",
+      "Bash(ls *)",
+      "Bash(echo *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(mkdir *)",
+      "Bash(touch *)",
+      "Bash(cp *)",
+      "Bash(sed *)",
+      "Bash(awk *)",
+      "Bash(wc *)",
+      "Bash(mv ~/src/**)",
+      "Bash(git branch *)",
+      "Bash(git checkout *)",
+      "Bash(git switch *)",
+      "Bash(git status *)",
+      "Bash(git add *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git pull *)",
+      "Bash(gh pr list *)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr diff *)",
+      "Bash(go env *)",
+      "Bash(go build *)",
+      "Bash(go test *)",
+      "Bash(go vet *)",
+      "Bash(go version *)",
+      "Bash(go doc *)",
+      "Bash(pnpm lint *)",
+      "Bash(pnpm lint-*)",
+      "Bash(pnpm format *)",
+      "Bash(pnpm format -*)",
+      "Bash(pnpm test *)",
+      "Bash(pnpm test-*)",
+      "Bash(make test)",
+      "Bash(make test-*)",
+      "Bash(make gen)",
+      "Bash(make gen-*)",
+      "Bash(make migrate-up)"
+    ],
+    "deny": [
+      "Bash(make migrate-drop)",
+      "Bash(make migrate-down)",
+      "Bash(make migrate-reset)",
+      "Bash(python *)",
+      "Bash(python3 *)"
+    ],
+    "ask": [
+      "Bash(rm *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git reset *)"
+    ],
+    "defaultMode": "plan"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Glass.aiff"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@v2.2.8"
+  },
+  "model": "opusplan"
+}
